@@ -1,0 +1,36 @@
+---
+const navbarMenuItems = [
+  {
+    title: "Home",
+    link: "/",
+  },
+  {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
+    title: "About",
+    link: "/about",
+  },
+  {
+    title: "Contact",
+    link: "/contact",
+  },
+];
+---
+
+<nav
+  class="px-5 py-4 flex justify-between items-center list-none max-w-screen-md mx-auto my-4 rounded-xl bg-[rgba(28,22,47,.3)] backdrop-blur-xl"
+>
+  <li class="text-lg">🥤</li>
+  <div class="flex gap-4">
+    {
+      navbarMenuItems.map((item) => (
+        <li class="cursor-pointer text-white font-light hover:text-[#888]  transition-colors">
+          <a href={item.link}>{item.title}</a>
+        </li>
+      ))
+    }
+  </div>
+  <li><button>🌙</button></li>
+</nav>

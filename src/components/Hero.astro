@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import Avatar from "../assets/images/avatar.jpg";
+---
+
+<div class="about-me max-w-screen-md mx-auto py-12">
+  <div class="profile flex items-center gap-6 mb-6">
+    <div>
+      <Image src={Avatar} alt="profile-picture" class="w-28 rounded-full" />
+    </div>
+    <div class="profile-content">
+      <h1 class="font-bold text-2xl uppercase tracking-wide text-white">
+        John Doe
+      </h1>
+      <a href="#" target="_blank" class="text-stone-500">@johndoe⤴</a>
+    </div>
+  </div>
+  <p class="about-me-text text-lg tracking-wide text-white font-light">
+    Meet John Doe, a frontend developer and designer with a wizard's touch. He
+    weaves captivating stories through his designs, crafting brand identities
+    and seamless user interfaces. A generous creator, John shares design
+    resources and tools with the creative community. Recently, he ventured into
+    game development, merging technical prowess with artistic vision for an
+    immersive gaming experience.
+  </p>
+</div>

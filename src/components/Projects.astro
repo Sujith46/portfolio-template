@@ -1,0 +1,86 @@
+---
+import CampfireImg from "../assets/images/projects/campfire.jpg";
+import FightImg from "../assets/images/projects/fight.jpg";
+import InteriorImg from "../assets/images/projects/interior.jpg";
+import CelestialImg from "../assets/images/projects/celestial.jpg";
+import NairobiImg from "../assets/images/projects/nairobi.jpg";
+import MobileUIImg from "../assets/images/projects/mobile_ui.png";
+import { Image } from "astro:assets";
+
+const projectData = [
+  {
+    title: "Campfire UI",
+    img: CampfireImg,
+    description: "Campfire UI/UX design",
+  },
+  {
+    title: "Fight Club",
+    img: FightImg,
+    description: "Fight Club stats website design",
+  },
+  {
+    title: "Interior designers",
+    img: InteriorImg,
+    description: "Find great interior designer webpage",
+  },
+  {
+    title: "Celestial UI",
+    img: CelestialImg,
+    description: "Celestial UI/UX design",
+  },
+  {
+    title: "Nairobi",
+    img: NairobiImg,
+    description: "Nairobi travel UI design",
+  },
+  {
+    title: "Mobile UI",
+    img: MobileUIImg,
+    description: "Mobile UI/UX design",
+  },
+];
+---
+
+<div class="projects max-w-screen-md mx-auto py-6">
+  <div class="projects-header flex items-center justify-between">
+    <h2 class="text-stone-600 uppercase tracking-[6px] text-sm font-semibold">
+      My projects
+    </h2>
+    <a href="#" class="text-sm transition-colors gradient">All works ▸</a>
+  </div>
+  <div class="project-listings py-6 grid grid-cols-3 gap-8">
+    {
+      projectData.map((item) => (
+        <a class="project hover:scale-105 cursor-pointer transition-all">
+          <div class="relative w-full h-48 block">
+            <Image
+              src={item.img}
+              alt="project-preview-img"
+              class="absolute bg-center bg-no-repeat w-full h-full rounded-xl"
+            />
+          </div>
+          <div class="project-content my-2">
+            <h3 class="font-medium text-white">{item.title}</h3>
+            <div class="text-stone-500">{item.description}</div>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .gradient {
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgba(114, 120, 136, 0.6);
+    background-image: linear-gradient(
+      90deg,
+      #80f2a0 0%,
+      #5c82ff 50%,
+      #ff8080 100%
+    );
+  }
+</style>

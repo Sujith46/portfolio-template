@@ -1,0 +1,32 @@
+---
+import BlackGradientSVG from "../components/BlackGradientSVG.astro";
+import GradientSVG from "../components/GradientSVG.astro";
+import HeaderGradientSVG from "../components/HeaderGradientSVG.astro";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <div class="fixed top-0 left-0 w-full h-full -z-50">
+      <!-- <GradientSVG /> -->
+      <BlackGradientSVG />
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full -z-40">
+      <HeaderGradientSVG />
+    </div>
+  </body>
+</html>
