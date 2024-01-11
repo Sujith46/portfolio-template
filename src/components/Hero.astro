@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Avatar from "../assets/images/avatar.jpg";
 ---
 
-<div class="about-me max-w-screen-md mx-auto py-12">
+<div class="about-me max-w-screen-md py-4 lg:py-12 mx-6 lg:mx-auto">
   <div class="profile flex items-center gap-6 mb-6">
     <div>
       <Image src={Avatar} alt="profile-picture" class="w-28 rounded-full" />
@@ -15,7 +15,7 @@ import Avatar from "../assets/images/avatar.jpg";
       <a href="#" target="_blank" class="text-stone-500">@johndoe⤴</a>
     </div>
   </div>
-  <p class="about-me-text text-lg tracking-wide text-white font-light">
+  <p class="about-me-text tracking-wide text-white font-light text-base lg:text-lg">
     Meet John Doe, a frontend developer and designer with a wizard's touch. He
     weaves captivating stories through his designs, crafting brand identities
     and seamless user interfaces. A generous creator, John shares design

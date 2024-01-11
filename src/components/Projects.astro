@@ -41,18 +41,18 @@ const projectData = [
 ];
 ---
 
-<div class="projects max-w-screen-md mx-auto py-6">
+<div class="projects max-w-screen-md mx-6 lg:mx-auto py-6">
   <div class="projects-header flex items-center justify-between">
     <h2 class="text-stone-600 uppercase tracking-[6px] text-sm font-semibold">
       My projects
     </h2>
     <a href="#" class="text-sm transition-colors gradient">All works ▸</a>
   </div>
-  <div class="project-listings py-6 grid grid-cols-3 gap-8">
+  <div class="project-listings py-6 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
     {
       projectData.map((item) => (
         <a class="project hover:scale-105 cursor-pointer transition-all">
-          <div class="relative w-full h-48 block">
+          <div class="relative w-full h-36 lg:h-48 block">
             <Image
               src={item.img}
               alt="project-preview-img"
@@ -61,7 +61,7 @@ const projectData = [
           </div>
           <div class="project-content my-2">
             <h3 class="font-medium text-white">{item.title}</h3>
-            <div class="text-stone-500">{item.description}</div>
+            <div class="text-stone-500 text-sm lg:text-base">{item.description}</div>
           </div>
         </a>
       ))
