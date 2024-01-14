@@ -48,7 +48,9 @@ const projectData = [
     </h2>
     <a href="#" class="text-sm transition-colors gradient">All works ▸</a>
   </div>
-  <div class="project-listings py-6 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+  <div
+    class="project-listings py-6 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+  >
     {
       projectData.map((item) => (
         <a class="project hover:scale-105 cursor-pointer transition-all">
@@ -61,7 +63,9 @@ const projectData = [
           </div>
           <div class="project-content my-2">
             <h3 class="font-medium text-white">{item.title}</h3>
-            <div class="text-stone-500 text-sm lg:text-base">{item.description}</div>
+            <div class="text-stone-500 text-sm lg:text-base">
+              {item.description}
+            </div>
           </div>
         </a>
       ))
