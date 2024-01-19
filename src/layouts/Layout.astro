@@ -3,6 +3,7 @@ import BlackGradientSVG from "../components/BlackGradientSVG.astro";
 import Footer from "../components/Footer.astro";
 import GradientSVG from "../components/GradientSVG.astro";
 import HeaderGradientSVG from "../components/HeaderGradientSVG.astro";
+import Navbar from "../components/Navbar.astro";
 interface Props {
   title: string;
 }
@@ -20,6 +21,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Navbar />
     <slot />
     <div class="fixed top-0 left-0 w-full h-full -z-50">
       <!-- <GradientSVG /> -->

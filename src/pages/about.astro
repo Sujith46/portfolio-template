@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DesktopSetupImg from "../assets/images/desk-setup.jpg";
+import { Image } from "astro:assets";
+---
+
+<Layout title="">
+  <main class="max-w-screen-md mx-6 lg:mx-auto my-16">
+    <p class="text-white text-center font-light tracking-wide mb-16">
+      John Doe is a dynamic Frontend Engineer and Product Designer, seamlessly
+      blending technical prowess with creative flair. With a passion for
+      crafting engaging user experiences, I bring a unique blend of coding
+      expertise and design sensibilities to every project. Committed to
+      innovation, I thrive on pushing boundaries and delivering solutions that
+      captivate and inspire. Let's build a visually stunning and functionally
+      flawless digital future together.
+    </p>
+    <Image src={DesktopSetupImg} alt="desktop-setup-img" class="rounded-xl" />
+  </main>
+</Layout>
