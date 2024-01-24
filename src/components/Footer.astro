@@ -21,17 +21,35 @@ const socialProfiles = [
 ];
 ---
 
-<footer class="max-w-screen-md mx-2 lg:mx-auto my-8">
-  <h3 class="footer-heading text-stone-500 text-center text-lg mb-4">
-    Let's connect
-  </h3>
-  <div class="social-profiles flex justify-center items-center gap-6">
-    {
-      socialProfiles.map((item) => (
-        <a href={item.link} target="_blank">
-          <item.element color="white" />
-        </a>
-      ))
-    }
+<footer class="max-w-screen-md mx-2 lg:mx-auto my-12">
+  <div class="divider"></div>
+  <div class="my-8">
+    <h3 class="footer-heading text-stone-500 text-center text-lg mb-4">
+      Let's connect
+    </h3>
+    <div class="social-profiles flex justify-center items-center gap-6">
+      {
+        socialProfiles.map((item) => (
+          <a href={item.link} target="_blank">
+            <item.element color="white" />
+          </a>
+        ))
+      }
+    </div>
   </div>
 </footer>
+
+<style>
+  .divider {
+    margin: 20px auto;
+    text-align: center;
+    height: 1px;
+    opacity: 0.5;
+    background: linear-gradient(
+      90deg,
+      hsl(0, 100%, 55%),
+      hsl(0, 0%, 5%),
+      hsl(0, 0%, 98%)
+    );
+  }
+</style>
