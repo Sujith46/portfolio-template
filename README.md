@@ -1,5 +1,8 @@
 # Astro JS Portfolio Website 🌐
 
+<img width="1455" alt="Screenshot 2024-01-24 at 5 55 41 PM" src="https://github.com/Sujith46/portfolio-template/assets/37608689/3d0d4b1a-4442-407a-ac1c-03d9ee7f6011">
+
+
 Welcome to my interactive and visually stunning portfolio website! Crafted with love using Astro.js, this site encapsulates my journey, skills, and projects. 🚀
 
 ## Features:
@@ -17,6 +20,12 @@ Welcome to my interactive and visually stunning portfolio website! Crafted with 
    - Navigate to the project directory: `cd your-portfolio`
    - Install dependencies: `npm install`
    - Start the development server: `npm run dev`
+
+## Website Preview:
+
+<img width="1455" alt="Screenshot 2024-01-24 at 5 57 19 PM" src="https://github.com/Sujith46/portfolio-template/assets/37608689/0164cee2-c0fe-4c56-9493-944d82b818d7">
+<img width="1455" alt="Screenshot 2024-01-24 at 5 55 50 PM" src="https://github.com/Sujith46/portfolio-template/assets/37608689/1976565c-35f7-4f73-87d1-bac6232484e8">
+<img width="1455" alt="Screenshot 2024-01-24 at 5 55 41 PM" src="https://github.com/Sujith46/portfolio-template/assets/37608689/10bf5c07-98b3-4c01-b460-4d82037b23a3">
 
 ## Contributions and Issues:
 
